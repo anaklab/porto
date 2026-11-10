@@ -1,0 +1,8 @@
+{
+    "name": "anaklab/portfolio",
+    "description": "Website portofolio Rendi Suhendri",
+    "require": {
+        "php": ">=8.1",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F1B33"/><stop offset="1" stop-color="#060B16"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<circle cx="680" cy="70" r="160" fill="#22D3EE" opacity=".07"/>
+<g transform="translate(90 60)"><rect width="620" height="360" rx="14" fill="#111827" stroke="#334155"/>
+<rect width="620" height="38" rx="14" fill="#1E293B"/><rect y="24" width="620" height="14" fill="#1E293B"/>
+<circle cx="22" cy="19" r="6" fill="#F87171"/><circle cx="42" cy="19" r="6" fill="#FBBF24"/><circle cx="62" cy="19" r="6" fill="#34D399"/>
+<rect x="160" y="10" width="300" height="18" rx="9" fill="#0B1120"/>
+<text x="310" y="23" fill="#94A3B8" font-family="monospace" font-size="11" text-anchor="middle">simola · monitoring lapangan</text>
+<rect x="0" y="38" width="160" height="322" fill="#0F172A"/><text x="24" y="80" fill="#22D3EE" font-family="monospace" font-size="16" font-weight="bold">SIMOLA</text><rect x="24" y="120" width="100" height="10" rx="5" fill="#22D3EE"/><rect x="24" y="150" width="80" height="10" rx="5" fill="#334155"/><rect x="24" y="180" width="100" height="10" rx="5" fill="#334155"/><rect x="24" y="210" width="80" height="10" rx="5" fill="#334155"/><rect x="24" y="240" width="100" height="10" rx="5" fill="#334155"/>
+<rect x="190" y="60" width="122" height="64" rx="8" fill="#172033"/><rect x="204" y="74" width="60" height="8" rx="4" fill="#475569"/><text x="204" y="110" fill="#F1F5F9" font-family="monospace" font-size="20" font-weight="bold">128</text>
+<rect x="324" y="60" width="122" height="64" rx="8" fill="#172033"/><rect x="338" y="74" width="60" height="8" rx="4" fill="#475569"/><text x="338" y="110" fill="#34D399" font-family="monospace" font-size="20" font-weight="bold">94%</text>
+<rect x="458" y="60" width="132" height="64" rx="8" fill="#172033"/><rect x="472" y="74" width="60" height="8" rx="4" fill="#475569"/><text x="472" y="110" fill="#FBBF24" font-family="monospace" font-size="20" font-weight="bold">12</text>
+<rect x="190" y="140" width="400" height="196" rx="8" fill="#0B1120" stroke="#1E293B"/>
+<path d="M190 250 Q260 200 330 240 T470 220 T590 260" fill="none" stroke="#1E293B" stroke-width="10"/><path d="M300 140 L340 336 M460 140 L420 336" stroke="#1E293B" stroke-width="6"/>
+<g fill="#22D3EE"><circle cx="250" cy="200" r="7"/><circle cx="380" cy="270" r="7"/><circle cx="520" cy="190" r="7"/><circle cx="470" cy="300" r="7"/></g>
+<g fill="#34D399"><circle cx="300" cy="300" r="7"/><circle cx="550" cy="270" r="7"/></g><circle cx="400" cy="180" r="7" fill="#F87171"/>
+<circle cx="380" cy="270" r="16" fill="none" stroke="#22D3EE" opacity=".5"/></g></svg>

@@ -1,0 +1,7 @@
+config.local.php
+vendor/
+cache/*
+logs/*
+!cache/.gitkeep
+!logs/.gitkeep
+.DS_Store
