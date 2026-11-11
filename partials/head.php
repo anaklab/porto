@@ -39,9 +39,9 @@ $ld = [
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<link rel="preload" as="image" href="assets/img/hero-photo.webp" type="image/webp">
+<link rel="preload" as="image" href="assets/img/hero-spidey.webp?v=2" type="image/webp">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 <script src="assets/js/theme.js?v=2"></script>
 
 <script type="application/ld+json"><?= json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>

@@ -65,6 +65,8 @@
       current += (target - current) * 0.12;
       photo.style.setProperty('--split', current.toFixed(2) + '%');
       const lean = current - 50;
+      /* Intensitas efek "mode coder": tipis saat diam, penuh saat digeser ke sisi coder */
+      photo.style.setProperty('--fx', (0.25 + 0.75 * Math.min(1, Math.max(0, -lean / 30))).toFixed(2));
       hero.classList.toggle('lean-left', lean > 9);
       hero.classList.toggle('lean-right', lean < -9);
       bgNet.style.opacity = (0.42 + lean / 70).toFixed(2);

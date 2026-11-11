@@ -133,6 +133,27 @@ a:hover{color:var(--accent-hover)}
 .rs-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:bottom;user-select:none;-webkit-user-drag:none}
 .rs-photo .img-net{clip-path:inset(0 calc(100% - var(--split,50%)) 0 0)}
 .rs-photo .img-code{clip-path:inset(0 0 0 var(--split,50%))}
+
+/* Mode coder (sisi kanan): tint, grid, hujan kode, HUD — orisinal, hanya di dalam siluet */
+.rs-fx{position:absolute;inset:0;pointer-events:none;clip-path:inset(0 0 0 var(--split,50%));--fx-c:34,211,238}
+.rs-fx-skin,.rs-fx-rain{position:absolute;inset:0;
+  -webkit-mask:url(../img/hero-spidey.webp?v=2) bottom/contain no-repeat;mask:url(../img/hero-spidey.webp?v=2) bottom/contain no-repeat}
+.rs-fx-skin{opacity:var(--fx,.25);mix-blend-mode:screen;
+  background:
+    repeating-linear-gradient(0deg,rgba(var(--fx-c),.10) 0 1px,transparent 1px 4px),
+    linear-gradient(rgba(var(--fx-c),.16) 1px,transparent 1px) 0 0/22px 22px,
+    linear-gradient(90deg,rgba(var(--fx-c),.16) 1px,transparent 1px) 0 0/22px 22px,
+    linear-gradient(160deg,rgba(var(--fx-c),.28),rgba(52,211,153,.18) 60%,transparent)}
+.rs-fx-rain{opacity:calc(var(--fx,.25) * .9);overflow:hidden}
+.rs-fx-rain span{position:absolute;top:0;left:var(--x);width:1ch;font:500 clamp(9px,1.4vw,12px)/1.15 var(--mono);color:#22D3EE;
+  word-break:break-all;text-shadow:0 0 6px rgba(34,211,238,.8);animation:rs-rain var(--dur,6s) linear var(--delay,0s) infinite}
+@keyframes rs-rain{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+.rs-fx-hud{position:absolute;left:var(--split,50%);right:4%;top:14%;display:flex;flex-direction:column;align-items:flex-end;gap:2px;
+  padding-left:10px;font:500 clamp(9px,1.2vw,11px)/1.3 var(--mono);color:#22D3EE;opacity:var(--fx,.25);text-shadow:0 0 6px rgba(34,211,238,.7)}
+.rs-fx-hud span:last-child{color:#34D399}
+.rs-split.lean-right .rs-fx-skin{animation:rs-glitch .45s steps(3) 1}
+@keyframes rs-glitch{0%{transform:translate(3px,-1px);filter:hue-rotate(40deg)}50%{transform:translate(-3px,1px)}100%{transform:none;filter:none}}
+
 .rs-divider{position:absolute;top:6%;bottom:18%;left:var(--split,50%);width:2px;transform:translateX(-1px);
   background:linear-gradient(to bottom,transparent,var(--accent) 20%,var(--accent-2) 80%,transparent);box-shadow:0 0 18px rgba(34,211,238,.7)}
 .rs-hint{position:absolute;z-index:4;bottom:22px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:.75rem;color:var(--text-secondary);

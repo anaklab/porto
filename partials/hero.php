@@ -38,9 +38,22 @@ public class <b>Main</b> {
     <div class="tags">#routing #vlan #server</div>
   </div>
 
-  <div class="rs-photo" id="rsPhoto" role="img" aria-label="Foto <?= e($cfg['name']) ?>: separuh kiri bergaya jaringan, separuh kanan foto asli">
+  <div class="rs-photo" id="rsPhoto" role="img" aria-label="Foto <?= e($cfg['name']) ?>: separuh kiri bergaya jaringan, separuh kanan memakai kostum superhero">
     <img class="img-net"  src="assets/img/hero-network.webp" alt="" width="708" height="944" fetchpriority="high" draggable="false">
-    <img class="img-code" src="assets/img/hero-photo.webp"   alt="" width="708" height="944" fetchpriority="high" draggable="false">
+    <img class="img-code" src="assets/img/hero-spidey.webp?v=2"  alt="" width="708" height="944" fetchpriority="high" draggable="false">
+    <!-- Mode coder: efek orisinal di atas foto, hanya terlihat di sisi kanan pembatas -->
+    <div class="rs-fx" aria-hidden="true">
+      <div class="rs-fx-skin"></div>
+      <div class="rs-fx-rain"><?php
+        $glyphs = str_split('01{}<>/;=$#[]()');
+        foreach ([8, 19, 31, 44, 57, 69, 81, 92] as $i => $x) {
+            $col = '';
+            for ($n = 0; $n < 26; $n++) $col .= $glyphs[($n * 7 + $i * 5 + $n * $i) % count($glyphs)];
+            echo '<span style="--x:' . $x . '%;--dur:' . (5 + ($i * 3) % 7) . 's;--delay:-' . ($i * 1.3) . 's">' . e($col . $col) . '</span>';
+        }
+      ?></div>
+      <div class="rs-fx-hud"><span>// mode: coder</span><span>build ✓</span></div>
+    </div>
     <div class="rs-divider" aria-hidden="true"></div>
   </div>
 

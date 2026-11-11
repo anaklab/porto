@@ -37,6 +37,6 @@
 <div class="rs-toast" id="rsToast" role="status" aria-live="polite"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
-<script src="assets/js/main.js?v=1" defer></script>
+<script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
