@@ -1,7 +1,10 @@
 <nav class="navbar navbar-expand-lg rs-nav fixed-top" id="rsNav" aria-label="Navigasi utama">
   <div class="container">
     <a class="rs-logo" href="#home">&lt;RS/&gt; <span><?= e($cfg['name']) ?></span></a>
-    <button class="rs-burger d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#rsMenu"
+    <button class="rs-theme order-lg-last ms-auto ms-lg-3" type="button" data-theme-toggle aria-label="Ganti tema">
+      <?= icon('sun') ?><?= icon('moon') ?>
+    </button>
+    <button class="rs-burger d-lg-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#rsMenu"
             aria-controls="rsMenu" aria-expanded="false" aria-label="Buka menu">
       <?= icon('menu') ?>
     </button>
